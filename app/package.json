@@ -1,17 +1,16 @@
 {
-  "name": "@elenacode/timer-web-component",
+  "name": "timer-pwa",
   "version": "1.0.0",
-  "description": "Componente timer para PWA",
+  "description": "Timer progressive web app",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
-    "publish:npm": "npm publish --access public"
+    "start": "http-server -c-1 dist"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
   "eslintConfig": {
     "extends": "node_modules/standard/eslintrc.json"
   },
@@ -21,9 +20,24 @@
     "@babel/preset-env": "^7.15.8",
     "autoprefixer": "^10.1.0",
     "babel-loader": "^9.0.0",
+    "copy-webpack-plugin": "13.0.1",
+    "css-loader": "7.1.2",
+    "extract-loader": "5.1.0",
+    "html-loader": "5.1.0",
+    "html-webpack-plugin": "5.6.4",
+    "http-server": "14.1.1",
     "lit": "^3.3.1",
+    "mini-css-extract-plugin": "2.9.4",
+    "sass": "1.93.2",
+    "sass-loader": "16.0.6",
     "standard": "^17.1.0",
+    "style-loader": "4.0.0",
+    "url-loader": "4.1.1",
     "webpack": "^5.0.0",
     "webpack-cli": "^5.0.0"
+  },
+  "dependencies": {
+    "@elenacode/sound-player-component": "^1.0.0",
+    "@elenacode/timer-web-component": "^1.0.0"
   }
 }
