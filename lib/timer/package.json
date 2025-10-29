@@ -5,16 +5,25 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "publish:npm": "npm publish --access public"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {},
+  "eslintConfig": {
+    "extends": "node_modules/standard/eslintrc.json"
+  },
   "devDependencies": {
-    "webpack": "^5.0.0",
-    "webpack-cli": "^5.0.0",
+    "@babel/core": "^7.15.8",
+    "@babel/plugin-transform-runtime": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "autoprefixer": "^10.1.0",
     "babel-loader": "^9.0.0",
-    "@babel/core": "^7.0.0",
-    "@babel/preset-env": "^7.0.0"
+    "lit": "^3.3.1",
+    "standard": "^17.1.0",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^5.0.0"
   }
 }
