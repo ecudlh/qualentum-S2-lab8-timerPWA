@@ -3,7 +3,7 @@ import './src/scss/styles.scss';
 import './src/sounds/sheep.mp3';
 
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js', { type: 'module' })
+    navigator.serviceWorker.register('./sw.js', { type: 'module' })
         .then(() => console.log('service worker registered'))
         .catch((err) => console.log('service worker not registered', err));
 }

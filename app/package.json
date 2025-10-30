@@ -37,7 +37,7 @@
     "webpack-cli": "^5.0.0"
   },
   "dependencies": {
-    "@elenacode/sound-player-component": "^1.0.0",
-    "@elenacode/timer-web-component": "^1.0.0"
+    "@elenacode/sound-player-component": "^1.0.1",
+    "@elenacode/timer-web-component": "^1.0.1"
   }
 }

@@ -16,7 +16,21 @@ export class App extends LitElement {
     }
 
     static styles = css `
+        :host {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
+        img {
+            width: 400px;
+            margin-top: 40px;
+        }
+
+        .container {
+            padding: 40px;
+            background-color: #fff;
+        }
     `;
 
     _setTime() {
@@ -33,7 +47,6 @@ export class App extends LitElement {
             <img class="logo" src="${logo.default}" alt="TimerPWA logo">
             <div class="container">
                 <div class="timer-component">
-                    <h1>Timer component</h1>
                     <timer-component direction="down" start="${this.start}" limit="0" autoreset></timer-component>
                     <sound-component sound="${this.sounnd}" id="finish-sound"></sound-component>
                 </div>
