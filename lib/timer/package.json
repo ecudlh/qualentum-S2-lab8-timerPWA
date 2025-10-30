@@ -1,6 +1,6 @@
 {
   "name": "@elenacode/timer-web-component",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Componente timer para PWA",
   "main": "index.js",
   "type": "module",
