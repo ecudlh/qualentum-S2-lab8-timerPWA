@@ -38,6 +38,6 @@
   },
   "dependencies": {
     "@elenacode/sound-player-component": "^1.0.1",
-    "@elenacode/timer-web-component": "^1.0.1"
+    "@elenacode/timer-web-component": "^1.0.2"
   }
 }

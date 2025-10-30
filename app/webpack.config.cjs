@@ -66,12 +66,12 @@ module.exports = (env, argv) => ({
         new MiniCssExtractPlugin({
             filename: '[name].css'
         }),
-        // new CopyPlugin({
-        //     patterns : [
-        //         // { from: "./src/images/screenshots", to: "assets" },
-        //         { from: "./sw.js", to: "./" },
-        //         { from: "src/images/icons/*.png", to: "assets/[name][ext]" },
-        //     ],
-        // }),
+        new CopyPlugin({
+            patterns : [
+                // { from: "./src/images/screenshots", to: "assets" },
+                { from: "./sw.js", to: "./" },
+                { from: "src/images/icons/*.png", to: "assets/[name][ext]" },
+            ],
+        }),
     ],
 });
